@@ -3,10 +3,131 @@
   <head>
     <meta charset=UTF-8 />
     <title>Model view</title>
-      <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <head>
+	
+    <meta charset="utf-8">
+    <title>Fishy</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="js/superfish.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script src="js/jquery.mb.YTPlayer.js" type="text/javascript"></script>
+    <script src="js/animate.js" type="text/javascript"></script>
+    <script src="js/jquery.BlackAndWhite.js"></script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script src="js/three.r119.min.js"></script>
+    <script src="js/vanta.birds.min.js"></script>
+    <script src="js/vanta.waves.min.js"></script>
+    <script>
+      
+      //PrettyPhoto
+      jQuery(document).ready(function() {
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+      });
+      
+  
+      $(window).load(function(){
+        $('.client_img').BlackAndWhite({
+          hoverEffect : true, 
+  
+          webworkerPath : false,
+  
+          responsive:true,
+  
+          invertHoverEffect: false,
+  
+          intensity:1,
+          speed: { 
+            fadeIn: 300, 
+            fadeOut: 300
+          },
+          onImageReady:function(img) {
+  
+          }
+        });
+      });
+      
+    </script>
+    <script>
+      VANTA.WAVES({
+        el: "#VantaWaves",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 2000.00,
+        minWidth: 2000.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x155c73,
+        shininess: 25.00,
+        waveHeight: 26.50,
+        waveSpeed: 0.70,
+        zoom: 0.65
+      })
+      </script>
+    
   </head>
   <body>
-    <div id="burd"></div>
+    <img id="preloader" src="images/preloader.gif" alt="" />
+    <div class="preloader_hide">
+			
+
+			<div class="menu_block">
+			
+
+				<div class="container clearfix">
+					
+					
+					<div class="logo pull-left">
+						<a href="animals.html" ><span class="b1">F</span><span class="b2">I</span><span class="b3">S</span><span class="b4">H</span><span class="b5">Y</span></a>
+					</div>
+					
+
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="animals.html" >Главная</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+    <div id="burd">
+      <div class="parent">
+        <div class="block">
+            <div class="card">
+                <div class="photo"></div>
+                <div class="banner"></div>
+                <ul>
+                    <li><b>В разработке</b></li>
+                </ul>
+               <!-- <button class="contact" id="main-button">Contact Form</button> -->
+                </div>
+              <!--  <form method="post" action="//formspree.io/example@example.com" class="email-form" >
+                    <input class="reg" name="name" type="name" placeholder="name" required />
+            <input class="reg" type="email" placeholder="email" name="_replyto" required />
+                    <textarea  class="reg" name="message" type="text" placeholder="message" required > </textarea>
+                    <button type="submit" class="contact">send</button>-->
+              </div>
+    </div>
+    </div>
+  </div>
     
 <script src="three.r119.min.js"></script>
 <script src="vanta.birds.min.js"></script>
@@ -28,4 +149,11 @@ VANTA.BIRDS({
 </script>
 
   </body>
+  <footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+		</div>
+	</footer>
 </html>
